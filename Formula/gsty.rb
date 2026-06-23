@@ -1,14 +1,16 @@
 class Gsty < Formula
   desc "Ghostty live preview theme browser and installer TUI"
   homepage "https://github.com/tappunk/gsty"
-  head "https://github.com/tappunk/gsty.git", branch: "main"
+  version "0.1.2"
 
   depends_on arch: :arm64
   depends_on :macos
-  depends_on "rust" => :build
+
+  url "https://github.com/tappunk/gsty/releases/download/v#{version}/gsty-#{version}-bin-macos-arm64.tar.gz"
+  sha256 "a18be99194f737b44cca658a66910129104d01c0b3e537f96a32610a76617ae6"
 
   def install
-    system "cargo", "install", *std_cargo_args(path: ".")
+    bin.install "gsty"
   end
 
   test do
