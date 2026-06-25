@@ -5,11 +5,9 @@
 
 # homebrew-gsty
 
-Homebrew tap for gsty, a Ghostty live preview theme browser and installer TUI for macOS.
+Homebrew tap for gsty — Ghostty terminal theme browser with live preview TUI.
 
-## Prerequisites
-
-macOS (Apple Silicon / ARM64).
+[Installation](#installation) • [Usage](#usage) • [Full docs](https://github.com/tappunk/gsty)
 
 ## Installation
 
@@ -20,15 +18,8 @@ brew install tappunk/gsty/gsty
 ## Usage
 
 ```bash
-gsty
-gsty --list
-gsty --help
+gsty                          # Interactive TUI theme picker
+gsty --list                   # Plain text listing
 ```
 
-See [tappunk/gsty](https://github.com/tappunk/gsty) for full documentation and release notes.
-
-## Verification
-
-```bash
-brew test gsty
-```
+See [tappunk/gsty](https://github.com/tappunk/gsty) for full documentation, keybindings, and release notes.
